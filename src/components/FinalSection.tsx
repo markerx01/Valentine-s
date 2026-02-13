@@ -78,7 +78,7 @@ export function FinalSection() {
           }`}
         >
           <h2 className="text-4xl md:text-6xl font-bold text-white mb-6">
-            יום ולנטיין שמח
+            יום האהבה שמח
           </h2>
           <p className="text-3xl md:text-4xl text-gradient font-bold mb-2">
             רומי שלי 💕
