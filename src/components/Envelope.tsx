@@ -13,10 +13,10 @@ export function Envelope({ onOpen }: EnvelopeProps) {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen relative z-10">
+    <div className="flex flex-col items-center justify-center min-h-screen relative z-10" style={{ fontFamily: "'Heebo', sans-serif" }}>
       <div className="animate-fade-in-up" style={{ animationDelay: "0.3s", opacity: 0 }}>
         <p className="text-rose-200 text-lg md:text-xl mb-8 tracking-wide font-light">
-          You have a special message...
+          יש לך הודעה מיוחדת... 💌
         </p>
       </div>
 
@@ -72,7 +72,7 @@ export function Envelope({ onOpen }: EnvelopeProps) {
           >
             <div className="text-center p-4">
               <span className="text-4xl md:text-5xl">💌</span>
-              <p className="text-rose-500 text-sm md:text-base mt-2 font-medium">Open Me!</p>
+              <p className="text-rose-500 text-sm md:text-base mt-2 font-medium">!פתחי אותי</p>
             </div>
           </div>
 
@@ -93,7 +93,7 @@ export function Envelope({ onOpen }: EnvelopeProps) {
 
       <div className="animate-fade-in-up mt-8" style={{ animationDelay: "0.8s", opacity: 0 }}>
         <p className="text-rose-300/60 text-sm animate-float">
-          ✨ Click the envelope ✨
+          ✨ לחצי על המעטפה ✨
         </p>
       </div>
     </div>
