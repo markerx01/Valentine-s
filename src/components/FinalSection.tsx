@@ -40,20 +40,20 @@ export function FinalSection() {
   };
 
   const messages = [
-    "I love you! 💕",
-    "You mean everything to me! 🌹",
-    "You're my favorite person! 🥰",
-    "My heart is yours forever! 💝",
-    "You're absolutely perfect! ✨",
-    "I'm so lucky to have you! 🍀",
-    "You + Me = Forever 💞",
-    "You make my heart sing! 🎶",
-    "I love you more each day! 💗",
-    "You're my whole universe! 🌌",
+    "!אני אוהב אותך 💕",
+    "!את הכל בשבילי 🌹",
+    "!את האדם הכי אהוב עליי 🥰",
+    "!הלב שלי שייך לך לנצח 💝",
+    "!את פשוט מושלמת ✨",
+    "!כמה שאני בר מזל שיש לי אותך 🍀",
+    "את + אני = לנצח 💞",
+    "!את גורמת ללב שלי לשיר 🎶",
+    "!כל יום אני אוהב אותך יותר 💗",
+    "!את העולם שלי, רומי 🌌",
   ];
 
   return (
-    <div className="min-h-screen flex items-center justify-center relative z-10 px-4 py-16">
+    <div className="min-h-screen flex items-center justify-center relative z-10 px-4 py-16" style={{ fontFamily: "'Heebo', sans-serif" }}>
       {/* Confetti */}
       {confetti.map((c) => (
         <div
@@ -78,13 +78,13 @@ export function FinalSection() {
           }`}
         >
           <h2 className="text-4xl md:text-6xl font-bold text-white mb-6">
-            Happy Valentine's Day
+            יום ולנטיין שמח
           </h2>
-          <p className="text-2xl md:text-3xl text-gradient font-bold mb-2">
-            My Love
+          <p className="text-3xl md:text-4xl text-gradient font-bold mb-2">
+            רומי שלי 💕
           </p>
           <p className="text-rose-300/70 text-lg mt-4 mb-12">
-            Today, tomorrow, and every day after — you are my everything.
+            .היום, מחר, וכל יום אחרי — את הכל בשבילי
           </p>
         </div>
 
@@ -112,14 +112,14 @@ export function FinalSection() {
 
             {/* Click counter */}
             {clickCount > 0 && (
-              <div className="absolute -top-4 -right-4 bg-rose-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-sm font-bold shadow-lg animate-scale-in">
+              <div className="absolute -top-4 -left-4 bg-rose-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-sm font-bold shadow-lg animate-scale-in">
                 {clickCount}
               </div>
             )}
           </button>
 
           <p className="text-rose-300/50 text-sm mt-6 animate-float">
-            Tap the heart! 💕
+            !לחצי על הלב 💕
           </p>
 
           {/* Dynamic message based on clicks */}
@@ -140,13 +140,13 @@ export function FinalSection() {
         >
           <div className="glass rounded-2xl p-8 inline-block">
             <p className="text-rose-300/70 text-sm uppercase tracking-widest mb-2">
-              My love for you
+              האהבה שלי אלייך
             </p>
             <p className="text-white text-4xl md:text-5xl font-bold">
               ∞
             </p>
             <p className="text-rose-300 text-lg mt-2">
-              Infinite & Beyond
+              אינסופית ומעבר לכך
             </p>
           </div>
         </div>
@@ -158,7 +158,7 @@ export function FinalSection() {
           }`}
         >
           <p className="text-rose-400/40 text-sm">
-            Made with all my love, just for you 💕
+            נעשה עם כל האהבה שבעולם, רק בשבילך רומי 💕
           </p>
           <div className="flex items-center justify-center gap-2 mt-4">
             {["💕", "💖", "💗", "💝", "💘"].map((emoji, i) => (
