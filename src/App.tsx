@@ -22,7 +22,7 @@ export function App() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#1a0a10] via-[#2d0a1e] to-[#0f0618] relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-[#1a0a10] via-[#2d0a1e] to-[#0f0618] relative overflow-hidden" style={{ fontFamily: "'Heebo', sans-serif" }} dir="rtl">
       {/* Background gradient orbs */}
       <div className="fixed inset-0 z-0 overflow-hidden">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-rose-500/10 rounded-full blur-3xl" />
