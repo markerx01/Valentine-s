@@ -5,16 +5,16 @@ interface ReasonsSectionProps {
 }
 
 const reasons = [
-  { emoji: "😊", text: "Your beautiful smile that lights up my entire world" },
-  { emoji: "😂", text: "The way you laugh — it's my favorite sound" },
-  { emoji: "🤗", text: "Your warm hugs that make everything feel okay" },
-  { emoji: "💪", text: "How strong and brave you are, even on tough days" },
-  { emoji: "🧠", text: "Your brilliant mind that never stops amazing me" },
-  { emoji: "💖", text: "The kindness you show to everyone around you" },
-  { emoji: "🌟", text: "How you make ordinary moments feel extraordinary" },
-  { emoji: "🎵", text: "The little songs you hum when you think no one's listening" },
-  { emoji: "👀", text: "The way your eyes sparkle when you're excited" },
-  { emoji: "🫂", text: "How safe and loved you make me feel every single day" },
+  { emoji: "😊", text: "החיוך היפה שלך שמאיר לי את כל העולם" },
+  { emoji: "😂", text: "הצחוק שלך — הצליל הכי יפה שיש" },
+  { emoji: "🤗", text: "החיבוקים החמים שלך שגורמים לכל דבר להרגיש בסדר" },
+  { emoji: "💪", text: "כמה שאת חזקה ואמיצה, גם בימים הקשים" },
+  { emoji: "🧠", text: "הראש המבריק שלך שלא מפסיק להפתיע אותי" },
+  { emoji: "💖", text: "הטוב לב שלך וכמה שאת טובה עם כל מי שסביבך" },
+  { emoji: "🌟", text: "איך שאת הופכת כל רגע רגיל למשהו מיוחד" },
+  { emoji: "🎵", text: "השירים הקטנים שאת מזמזמת כשאת חושבת שאף אחד לא שומע" },
+  { emoji: "👀", text: "הנצנוץ בעיניים שלך כשאת מתלהבת ממשהו" },
+  { emoji: "🫂", text: "איך שאת גורמת לי להרגיש אהוב ובטוח כל יום מחדש" },
 ];
 
 export function ReasonsSection({ onContinue }: ReasonsSectionProps) {
@@ -36,18 +36,18 @@ export function ReasonsSection({ onContinue }: ReasonsSectionProps) {
   }, []);
 
   return (
-    <div ref={sectionRef} className="min-h-screen relative z-10 px-4 py-16">
+    <div ref={sectionRef} className="min-h-screen relative z-10 px-4 py-16" style={{ fontFamily: "'Heebo', sans-serif" }}>
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12 animate-fade-in-up">
           <h2 className="text-4xl md:text-5xl font-bold text-gradient mb-4">
-            10 Reasons I Love You
+            10 סיבות שאני אוהב אותך
           </h2>
           <p className="text-rose-300/70 text-lg">
-            (There are millions more, but here's a start...)
+            (יש עוד מיליונים, אבל זו רק ההתחלה...)
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6" dir="rtl">
           {reasons.map((reason, i) => (
             <div
               key={i}
@@ -77,7 +77,7 @@ export function ReasonsSection({ onContinue }: ReasonsSectionProps) {
             onClick={onContinue}
             className="bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-600 hover:to-rose-600 text-white px-10 py-4 rounded-full text-lg font-medium shadow-lg shadow-pink-500/30 hover:shadow-pink-500/50 transition-all duration-300 hover:scale-105 active:scale-95 cursor-pointer"
           >
-            One last surprise... ✨
+            ...הפתעה אחרונה ✨
           </button>
         </div>
       </div>
